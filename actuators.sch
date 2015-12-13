@@ -1,0 +1,586 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_antenna
+LIBS:_audio
+LIBS:_charge-pump-regulators
+LIBS:Comp2014
+LIBS:_connectors
+LIBS:cvra
+LIBS:_div
+LIBS:_ic
+LIBS:IRF
+LIBS:_linear-regulators
+LIBS:logo
+LIBS:Mec
+LIBS:_motor_drivers
+LIBS:National
+LIBS:phoenix
+LIBS:_power
+LIBS:_sensors
+LIBS:_stm32
+LIBS:_transceiver
+LIBS:_wireless
+LIBS:cvra-cape-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PCA9685 U?
+U 1 1 566DE8CA
+P 2300 1950
+F 0 "U?" H 2600 950 39  0000 C CNN
+F 1 "PCA9685" H 2300 2750 39  0000 C CNN
+F 2 "" H 2300 1950 39  0000 C CNN
+F 3 "" H 2300 1950 39  0000 C CNN
+	1    2300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 566DEC61
+P 1500 1250
+F 0 "R?" H 1530 1270 50  0000 L CNN
+F 1 "10k" H 1530 1210 50  0000 L CNN
+F 2 "" H 1500 1250 50  0000 C CNN
+F 3 "" H 1500 1250 50  0000 C CNN
+	1    1500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1400 1750 1400
+Connection ~ 1500 1400
+Wire Wire Line
+	1500 1350 1500 1400
+Wire Wire Line
+	1500 1050 1500 1150
+Wire Wire Line
+	1500 1100 1700 1100
+Wire Wire Line
+	1700 1100 1700 1300
+Wire Wire Line
+	1700 1300 1750 1300
+$Comp
+L +3V3 #PWR?
+U 1 1 566DEF11
+P 1500 1050
+F 0 "#PWR?" H 1500 900 50  0001 C CNN
+F 1 "+3V3" H 1500 1190 50  0000 C CNN
+F 2 "" H 1500 1050 60  0000 C CNN
+F 3 "" H 1500 1050 60  0000 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 1100
+$Comp
+L GND #PWR?
+U 1 1 566DF35A
+P 1700 2850
+F 0 "#PWR?" H 1700 2600 50  0001 C CNN
+F 1 "GND" H 1700 2700 50  0000 C CNN
+F 2 "" H 1700 2850 50  0000 C CNN
+F 3 "" H 1700 2850 50  0000 C CNN
+	1    1700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1900 1700 2850
+Wire Wire Line
+	1700 2800 1750 2800
+Wire Wire Line
+	1700 2600 1750 2600
+Connection ~ 1700 2800
+Wire Wire Line
+	1700 2500 1750 2500
+Connection ~ 1700 2600
+Wire Wire Line
+	1700 2400 1750 2400
+Connection ~ 1700 2500
+Wire Wire Line
+	1700 2300 1750 2300
+Connection ~ 1700 2400
+Wire Wire Line
+	1700 2200 1750 2200
+Connection ~ 1700 2300
+Wire Wire Line
+	1700 2100 1750 2100
+Connection ~ 1700 2200
+Wire Wire Line
+	1750 1900 1700 1900
+Connection ~ 1700 2100
+Text Notes 1950 3050 0    39   ~ 0
+I2C address:  \n0x40\n
+$Comp
+L C_Small C?
+U 1 1 566DF8D7
+P 1250 2300
+F 0 "C?" H 1260 2370 50  0000 L CNN
+F 1 "100n" H 1260 2220 50  0000 L CNN
+F 2 "" H 1250 2300 50  0000 C CNN
+F 3 "" H 1250 2300 50  0000 C CNN
+	1    1250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 566DF994
+P 1250 2400
+F 0 "#PWR?" H 1250 2150 50  0001 C CNN
+F 1 "GND" H 1250 2250 50  0000 C CNN
+F 2 "" H 1250 2400 50  0000 C CNN
+F 3 "" H 1250 2400 50  0000 C CNN
+	1    1250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 566DFA1A
+P 1250 2200
+F 0 "#PWR?" H 1250 2050 50  0001 C CNN
+F 1 "+3V3" H 1250 2340 50  0000 C CNN
+F 2 "" H 1250 2200 60  0000 C CNN
+F 3 "" H 1250 2200 60  0000 C CNN
+	1    1250 2200
+	1    0    0    -1  
+$EndComp
+Text Label 2850 1300 0    47   ~ 0
+PWM_0
+Text Label 2850 1400 0    47   ~ 0
+PWM_1
+Text Label 2850 1500 0    47   ~ 0
+PWM_2
+Text Label 2850 1600 0    47   ~ 0
+PWM_3
+Text Label 2850 1700 0    47   ~ 0
+PWM_4
+Text Label 2850 1800 0    47   ~ 0
+PWM_5
+Text Label 2850 1900 0    47   ~ 0
+PWM_6
+Text Label 2850 2000 0    47   ~ 0
+PWM_7
+Text Label 2850 2100 0    47   ~ 0
+PWM_8
+Text Label 2850 2200 0    47   ~ 0
+PWM_9
+Text Label 2850 2300 0    47   ~ 0
+PWM_10
+Text Label 2850 2400 0    47   ~ 0
+PWM_11
+Text Label 2850 2500 0    47   ~ 0
+PWM_12
+Text Label 2850 2600 0    47   ~ 0
+RGB_LED_R
+Text Label 2850 2700 0    47   ~ 0
+RGB_LED_G
+Text Label 2850 2800 0    47   ~ 0
+RGB_LED_B
+$Comp
+L SERVO CONN?
+U 1 1 566E1C8F
+P 4650 1350
+F 0 "CONN?" H 4650 1600 60  0000 C CNN
+F 1 "SERVO" H 4650 1100 60  0000 C CNN
+F 2 "" H 4650 1350 60  0000 C CNN
+F 3 "" H 4650 1350 60  0000 C CNN
+	1    4650 1350
+	1    0    0    -1  
+$EndComp
+Text Label 4300 1250 2    47   ~ 0
+PWM_0
+Text GLabel 4300 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E1DC5
+P 4250 1450
+F 0 "#PWR?" H 4250 1200 50  0001 C CNN
+F 1 "GND" H 4250 1300 50  0000 C CNN
+F 2 "" H 4250 1450 50  0000 C CNN
+F 3 "" H 4250 1450 50  0000 C CNN
+	1    4250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1450 4300 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E1E2A
+P 5600 1350
+F 0 "CONN?" H 5600 1600 60  0000 C CNN
+F 1 "SERVO" H 5600 1100 60  0000 C CNN
+F 2 "" H 5600 1350 60  0000 C CNN
+F 3 "" H 5600 1350 60  0000 C CNN
+	1    5600 1350
+	1    0    0    -1  
+$EndComp
+Text Label 5250 1250 2    47   ~ 0
+PWM_2
+Text GLabel 5250 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E1E32
+P 5200 1450
+F 0 "#PWR?" H 5200 1200 50  0001 C CNN
+F 1 "GND" H 5200 1300 50  0000 C CNN
+F 2 "" H 5200 1450 50  0000 C CNN
+F 3 "" H 5200 1450 50  0000 C CNN
+	1    5200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1450 5250 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E1E94
+P 4650 2050
+F 0 "CONN?" H 4650 2300 60  0000 C CNN
+F 1 "SERVO" H 4650 1800 60  0000 C CNN
+F 2 "" H 4650 2050 60  0000 C CNN
+F 3 "" H 4650 2050 60  0000 C CNN
+	1    4650 2050
+	1    0    0    -1  
+$EndComp
+Text Label 4300 1950 2    47   ~ 0
+PWM_1
+Text GLabel 4300 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E1E9C
+P 4250 2150
+F 0 "#PWR?" H 4250 1900 50  0001 C CNN
+F 1 "GND" H 4250 2000 50  0000 C CNN
+F 2 "" H 4250 2150 50  0000 C CNN
+F 3 "" H 4250 2150 50  0000 C CNN
+	1    4250 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2150 4300 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E1EA3
+P 5600 2050
+F 0 "CONN?" H 5600 2300 60  0000 C CNN
+F 1 "SERVO" H 5600 1800 60  0000 C CNN
+F 2 "" H 5600 2050 60  0000 C CNN
+F 3 "" H 5600 2050 60  0000 C CNN
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+Text Label 5250 1950 2    47   ~ 0
+PWM_3
+Text GLabel 5250 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E1EAB
+P 5200 2150
+F 0 "#PWR?" H 5200 1900 50  0001 C CNN
+F 1 "GND" H 5200 2000 50  0000 C CNN
+F 2 "" H 5200 2150 50  0000 C CNN
+F 3 "" H 5200 2150 50  0000 C CNN
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2150 5250 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E215D
+P 6550 1350
+F 0 "CONN?" H 6550 1600 60  0000 C CNN
+F 1 "SERVO" H 6550 1100 60  0000 C CNN
+F 2 "" H 6550 1350 60  0000 C CNN
+F 3 "" H 6550 1350 60  0000 C CNN
+	1    6550 1350
+	1    0    0    -1  
+$EndComp
+Text Label 6200 1250 2    47   ~ 0
+PWM_4
+Text GLabel 6200 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2165
+P 6150 1450
+F 0 "#PWR?" H 6150 1200 50  0001 C CNN
+F 1 "GND" H 6150 1300 50  0000 C CNN
+F 2 "" H 6150 1450 50  0000 C CNN
+F 3 "" H 6150 1450 50  0000 C CNN
+	1    6150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1450 6200 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E216C
+P 7500 1350
+F 0 "CONN?" H 7500 1600 60  0000 C CNN
+F 1 "SERVO" H 7500 1100 60  0000 C CNN
+F 2 "" H 7500 1350 60  0000 C CNN
+F 3 "" H 7500 1350 60  0000 C CNN
+	1    7500 1350
+	1    0    0    -1  
+$EndComp
+Text Label 7150 1250 2    47   ~ 0
+PWM_6
+Text GLabel 7150 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2174
+P 7100 1450
+F 0 "#PWR?" H 7100 1200 50  0001 C CNN
+F 1 "GND" H 7100 1300 50  0000 C CNN
+F 2 "" H 7100 1450 50  0000 C CNN
+F 3 "" H 7100 1450 50  0000 C CNN
+	1    7100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1450 7150 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E217B
+P 6550 2050
+F 0 "CONN?" H 6550 2300 60  0000 C CNN
+F 1 "SERVO" H 6550 1800 60  0000 C CNN
+F 2 "" H 6550 2050 60  0000 C CNN
+F 3 "" H 6550 2050 60  0000 C CNN
+	1    6550 2050
+	1    0    0    -1  
+$EndComp
+Text Label 6200 1950 2    47   ~ 0
+PWM_5
+Text GLabel 6200 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2183
+P 6150 2150
+F 0 "#PWR?" H 6150 1900 50  0001 C CNN
+F 1 "GND" H 6150 2000 50  0000 C CNN
+F 2 "" H 6150 2150 50  0000 C CNN
+F 3 "" H 6150 2150 50  0000 C CNN
+	1    6150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2150 6200 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E218A
+P 7500 2050
+F 0 "CONN?" H 7500 2300 60  0000 C CNN
+F 1 "SERVO" H 7500 1800 60  0000 C CNN
+F 2 "" H 7500 2050 60  0000 C CNN
+F 3 "" H 7500 2050 60  0000 C CNN
+	1    7500 2050
+	1    0    0    -1  
+$EndComp
+Text Label 7150 1950 2    47   ~ 0
+PWM_7
+Text GLabel 7150 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2192
+P 7100 2150
+F 0 "#PWR?" H 7100 1900 50  0001 C CNN
+F 1 "GND" H 7100 2000 50  0000 C CNN
+F 2 "" H 7100 2150 50  0000 C CNN
+F 3 "" H 7100 2150 50  0000 C CNN
+	1    7100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2150 7150 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E2649
+P 8450 1350
+F 0 "CONN?" H 8450 1600 60  0000 C CNN
+F 1 "SERVO" H 8450 1100 60  0000 C CNN
+F 2 "" H 8450 1350 60  0000 C CNN
+F 3 "" H 8450 1350 60  0000 C CNN
+	1    8450 1350
+	1    0    0    -1  
+$EndComp
+Text Label 8100 1250 2    47   ~ 0
+PWM_8
+Text GLabel 8100 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2651
+P 8050 1450
+F 0 "#PWR?" H 8050 1200 50  0001 C CNN
+F 1 "GND" H 8050 1300 50  0000 C CNN
+F 2 "" H 8050 1450 50  0000 C CNN
+F 3 "" H 8050 1450 50  0000 C CNN
+	1    8050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1450 8100 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E2658
+P 9400 1350
+F 0 "CONN?" H 9400 1600 60  0000 C CNN
+F 1 "SERVO" H 9400 1100 60  0000 C CNN
+F 2 "" H 9400 1350 60  0000 C CNN
+F 3 "" H 9400 1350 60  0000 C CNN
+	1    9400 1350
+	1    0    0    -1  
+$EndComp
+Text Label 9050 1250 2    47   ~ 0
+PWM_10
+Text GLabel 9050 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E2660
+P 9000 1450
+F 0 "#PWR?" H 9000 1200 50  0001 C CNN
+F 1 "GND" H 9000 1300 50  0000 C CNN
+F 2 "" H 9000 1450 50  0000 C CNN
+F 3 "" H 9000 1450 50  0000 C CNN
+	1    9000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1450 9050 1450
+$Comp
+L SERVO CONN?
+U 1 1 566E2667
+P 8450 2050
+F 0 "CONN?" H 8450 2300 60  0000 C CNN
+F 1 "SERVO" H 8450 1800 60  0000 C CNN
+F 2 "" H 8450 2050 60  0000 C CNN
+F 3 "" H 8450 2050 60  0000 C CNN
+	1    8450 2050
+	1    0    0    -1  
+$EndComp
+Text Label 8100 1950 2    47   ~ 0
+PWM_9
+Text GLabel 8100 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E266F
+P 8050 2150
+F 0 "#PWR?" H 8050 1900 50  0001 C CNN
+F 1 "GND" H 8050 2000 50  0000 C CNN
+F 2 "" H 8050 2150 50  0000 C CNN
+F 3 "" H 8050 2150 50  0000 C CNN
+	1    8050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2150 8100 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E2676
+P 9400 2050
+F 0 "CONN?" H 9400 2300 60  0000 C CNN
+F 1 "SERVO" H 9400 1800 60  0000 C CNN
+F 2 "" H 9400 2050 60  0000 C CNN
+F 3 "" H 9400 2050 60  0000 C CNN
+	1    9400 2050
+	1    0    0    -1  
+$EndComp
+Text Label 9050 1950 2    47   ~ 0
+PWM_11
+Text GLabel 9050 2050 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E267E
+P 9000 2150
+F 0 "#PWR?" H 9000 1900 50  0001 C CNN
+F 1 "GND" H 9000 2000 50  0000 C CNN
+F 2 "" H 9000 2150 50  0000 C CNN
+F 3 "" H 9000 2150 50  0000 C CNN
+	1    9000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2150 9050 2150
+$Comp
+L SERVO CONN?
+U 1 1 566E2685
+P 10350 1350
+F 0 "CONN?" H 10350 1600 60  0000 C CNN
+F 1 "SERVO" H 10350 1100 60  0000 C CNN
+F 2 "" H 10350 1350 60  0000 C CNN
+F 3 "" H 10350 1350 60  0000 C CNN
+	1    10350 1350
+	1    0    0    -1  
+$EndComp
+Text Label 10000 1250 2    47   ~ 0
+PWM_12
+Text GLabel 10000 1350 0    47   Input ~ 0
+POWER
+$Comp
+L GND #PWR?
+U 1 1 566E268D
+P 9950 1450
+F 0 "#PWR?" H 9950 1200 50  0001 C CNN
+F 1 "GND" H 9950 1300 50  0000 C CNN
+F 2 "" H 9950 1450 50  0000 C CNN
+F 3 "" H 9950 1450 50  0000 C CNN
+	1    9950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1450 10000 1450
+Text GLabel 1750 1600 0    47   Input ~ 0
+I2C2_SDA
+Text GLabel 1750 1700 0    47   Input ~ 0
+I2C2_SCL
+Text GLabel 1400 1400 0    47   Input ~ 0
+PWMGEN_OE
+$EndSCHEMATC

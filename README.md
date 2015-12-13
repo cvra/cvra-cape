@@ -6,7 +6,7 @@ A Beaglebone black extension board for robots used at [CVRA](http://www.cvra.ch/
 - 2x CAN interfaces with transceivers
     - 1x over native CAN peripheral
     - 1x over CAN-SPI chip
-- 16x PWM outputs (using chip over I2C)
+- 16x PWM outputs (using a PCA9685 chip over I2C)
     - 13x to control servo motors
     - 1x to control an RGB LED
 - 7x analog inputs with voltage dividers and option to power (3-pin connector)
@@ -24,7 +24,7 @@ A Beaglebone black extension board for robots used at [CVRA](http://www.cvra.ch/
 ## Notes
 
 ### PWM
-The PWM outputs are provided by a PWM chip controlled over I2C.
+The PWM outputs are provided by a PWM chip controlled over I2C (PCA9685).
 
 ### CAN
 There are 2 CAN interfaces on the cape. We use one. The other CAN uses an SPI (TBD).
