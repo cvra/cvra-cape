@@ -226,8 +226,6 @@ F 3 "" H 4650 1350 60  0000 C CNN
 $EndComp
 Text Label 4300 1250 2    47   ~ 0
 PWM_0
-Text GLabel 4300 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E1DC5
@@ -254,8 +252,6 @@ F 3 "" H 5600 1350 60  0000 C CNN
 $EndComp
 Text Label 5250 1250 2    47   ~ 0
 PWM_2
-Text GLabel 5250 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E1E32
@@ -282,8 +278,6 @@ F 3 "" H 4650 2050 60  0000 C CNN
 $EndComp
 Text Label 4300 1950 2    47   ~ 0
 PWM_1
-Text GLabel 4300 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E1E9C
@@ -310,8 +304,6 @@ F 3 "" H 5600 2050 60  0000 C CNN
 $EndComp
 Text Label 5250 1950 2    47   ~ 0
 PWM_3
-Text GLabel 5250 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E1EAB
@@ -338,8 +330,6 @@ F 3 "" H 6550 1350 60  0000 C CNN
 $EndComp
 Text Label 6200 1250 2    47   ~ 0
 PWM_4
-Text GLabel 6200 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2165
@@ -366,8 +356,6 @@ F 3 "" H 7500 1350 60  0000 C CNN
 $EndComp
 Text Label 7150 1250 2    47   ~ 0
 PWM_6
-Text GLabel 7150 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2174
@@ -394,8 +382,6 @@ F 3 "" H 6550 2050 60  0000 C CNN
 $EndComp
 Text Label 6200 1950 2    47   ~ 0
 PWM_5
-Text GLabel 6200 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2183
@@ -422,8 +408,6 @@ F 3 "" H 7500 2050 60  0000 C CNN
 $EndComp
 Text Label 7150 1950 2    47   ~ 0
 PWM_7
-Text GLabel 7150 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2192
@@ -450,8 +434,6 @@ F 3 "" H 8450 1350 60  0000 C CNN
 $EndComp
 Text Label 8100 1250 2    47   ~ 0
 PWM_8
-Text GLabel 8100 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2651
@@ -478,8 +460,6 @@ F 3 "" H 9400 1350 60  0000 C CNN
 $EndComp
 Text Label 9050 1250 2    47   ~ 0
 PWM_10
-Text GLabel 9050 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E2660
@@ -506,8 +486,6 @@ F 3 "" H 8450 2050 60  0000 C CNN
 $EndComp
 Text Label 8100 1950 2    47   ~ 0
 PWM_9
-Text GLabel 8100 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E266F
@@ -534,8 +512,6 @@ F 3 "" H 9400 2050 60  0000 C CNN
 $EndComp
 Text Label 9050 1950 2    47   ~ 0
 PWM_11
-Text GLabel 9050 2050 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E267E
@@ -562,8 +538,6 @@ F 3 "" H 10350 1350 60  0000 C CNN
 $EndComp
 Text Label 10000 1250 2    47   ~ 0
 PWM_12
-Text GLabel 10000 1350 0    47   Input ~ 0
-POWER
 $Comp
 L GND #PWR?
 U 1 1 566E268D
@@ -577,10 +551,36 @@ F 3 "" H 9950 1450 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9950 1450 10000 1450
-Text GLabel 1750 1600 0    47   Input ~ 0
+Text HLabel 1750 1600 0    47   Input ~ 0
 I2C2_SDA
-Text GLabel 1750 1700 0    47   Input ~ 0
+Text HLabel 1750 1700 0    47   Input ~ 0
 I2C2_SCL
-Text GLabel 1400 1400 0    47   Input ~ 0
+Text HLabel 1400 1400 0    47   Input ~ 0
 PWMGEN_OE
+Text HLabel 4300 1350 0    47   Input ~ 0
+POWER
+Text HLabel 4300 2050 0    47   Input ~ 0
+POWER
+Text HLabel 5250 1350 0    47   Input ~ 0
+POWER
+Text HLabel 5250 2050 0    47   Input ~ 0
+POWER
+Text HLabel 6200 2050 0    47   Input ~ 0
+POWER
+Text HLabel 6200 1350 0    47   Input ~ 0
+POWER
+Text HLabel 7150 1350 0    47   Input ~ 0
+POWER
+Text HLabel 7150 2050 0    47   Input ~ 0
+POWER
+Text HLabel 8100 2050 0    47   Input ~ 0
+POWER
+Text HLabel 8100 1350 0    47   Input ~ 0
+POWER
+Text HLabel 9050 1350 0    47   Input ~ 0
+POWER
+Text HLabel 9050 2050 0    47   Input ~ 0
+POWER
+Text HLabel 10000 1350 0    47   Input ~ 0
+POWER
 $EndSCHEMATC
