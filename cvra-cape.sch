@@ -53,7 +53,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -658,4 +658,28 @@ Text Label 3850 6950 0    47   ~ 0
 I2C2_SCL
 Text Label 3850 6850 0    47   ~ 0
 I2C2_SDA
+$Sheet
+S 4700 6550 1050 1000
+U 569FF03E
+F0 "Sensors" 60
+F1 "sensors.sch" 60
+F2 "ADC_1" I R 5750 6650 60 
+F3 "ADC_2" I R 5750 6750 60 
+F4 "ADC_3" I R 5750 6850 60 
+F5 "ADC_4" I R 5750 6950 60 
+F6 "ADC_5" I R 5750 7050 60 
+F7 "ADC_6" I R 5750 7150 60 
+$EndSheet
+Text Label 5750 6650 0    47   ~ 0
+ADC_IN_1
+Text Label 5750 6850 0    47   ~ 0
+ADC_IN_3
+Text Label 5750 7050 0    47   ~ 0
+ADC_IN_5
+Text Label 5750 6750 0    47   ~ 0
+ADC_IN_2
+Text Label 5750 6950 0    47   ~ 0
+ADC_IN_4
+Text Label 5750 7150 0    47   ~ 0
+ADC_IN_6
 $EndSCHEMATC
