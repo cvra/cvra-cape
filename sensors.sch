@@ -63,7 +63,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1775 1650 0    60   Input ~ 0
+Text HLabel 1775 1650 0    47   Input ~ 0
 ADC_1
 $Comp
 L R_Small R?
@@ -107,7 +107,9 @@ Wire Wire Line
 Wire Wire Line
 	1900 1350 2300 1350
 Wire Wire Line
-	1900 1600 1900 1725
+	1900 1600 1900 1650
+Wire Wire Line
+	1900 1650 1900 1725
 Wire Wire Line
 	1775 1650 1900 1650
 Connection ~ 1900 1650
@@ -124,7 +126,7 @@ F 3 "" H 1900 1975 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1900 1975 1900 1925
-Text HLabel 1775 2700 0    60   Input ~ 0
+Text HLabel 1775 2700 0    47   Input ~ 0
 ADC_2
 $Comp
 L R_Small R?
@@ -168,7 +170,9 @@ Wire Wire Line
 Wire Wire Line
 	1900 2400 2300 2400
 Wire Wire Line
-	1900 2650 1900 2775
+	1900 2650 1900 2700
+Wire Wire Line
+	1900 2700 1900 2775
 Wire Wire Line
 	1775 2700 1900 2700
 Connection ~ 1900 2700
@@ -185,7 +189,7 @@ F 3 "" H 1900 3025 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1900 3025 1900 2975
-Text HLabel 3875 1650 0    60   Input ~ 0
+Text HLabel 3875 1650 0    47   Input ~ 0
 ADC_3
 $Comp
 L R_Small R?
@@ -229,7 +233,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 1350 4400 1350
 Wire Wire Line
-	4000 1600 4000 1725
+	4000 1600 4000 1650
+Wire Wire Line
+	4000 1650 4000 1725
 Wire Wire Line
 	3875 1650 4000 1650
 Connection ~ 4000 1650
@@ -246,7 +252,7 @@ F 3 "" H 4000 1975 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4000 1975 4000 1925
-Text HLabel 3875 2700 0    60   Input ~ 0
+Text HLabel 3875 2700 0    47   Input ~ 0
 ADC_4
 $Comp
 L R_Small R?
@@ -290,7 +296,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 2400 4400 2400
 Wire Wire Line
-	4000 2650 4000 2775
+	4000 2650 4000 2700
+Wire Wire Line
+	4000 2700 4000 2775
 Wire Wire Line
 	3875 2700 4000 2700
 Connection ~ 4000 2700
@@ -318,7 +326,7 @@ F 3 "" H 6850 1750 59  0000 C CNN
 	1    6850 1750
 	1    0    0    -1  
 $EndComp
-Text HLabel 5975 1650 0    60   Input ~ 0
+Text HLabel 5975 1650 0    47   Input ~ 0
 ADC_5
 $Comp
 L R_Small R?
@@ -362,7 +370,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 1350 6500 1350
 Wire Wire Line
-	6100 1600 6100 1725
+	6100 1600 6100 1650
+Wire Wire Line
+	6100 1650 6100 1725
 Wire Wire Line
 	5975 1650 6100 1650
 Connection ~ 6100 1650
@@ -390,7 +400,7 @@ F 3 "" H 6850 2800 59  0000 C CNN
 	1    6850 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 5975 2700 0    60   Input ~ 0
+Text HLabel 5975 2700 0    47   Input ~ 0
 ADC_6
 $Comp
 L R_Small R?
@@ -434,7 +444,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 2400 6500 2400
 Wire Wire Line
-	6100 2650 6100 2775
+	6100 2650 6100 2700
+Wire Wire Line
+	6100 2700 6100 2775
 Wire Wire Line
 	5975 2700 6100 2700
 Connection ~ 6100 2700
@@ -553,4 +565,193 @@ F 3 "" H 4750 2800 59  0000 C CNN
 	1    4750 2800
 	1    0    0    -1  
 $EndComp
+$Comp
+L BQ32000 U?
+U 1 1 56B4E3C0
+P 3500 5025
+F 0 "U?" H 3500 5609 59  0000 C CNN
+F 1 "BQ32000" H 3500 5505 59  0000 C CNN
+F 2 "" H 3500 5675 39  0000 C CNN
+F 3 "" H 3500 5675 39  0000 C CNN
+	1    3500 5025
+	1    0    0    -1  
+$EndComp
+Text HLabel 4050 4725 2    47   Input ~ 0
+I2C_SCL
+Text HLabel 4050 4825 2    47   Input ~ 0
+I2C_SDA
+NoConn ~ 4050 5025
+Wire Wire Line
+	4050 5325 4800 5325
+Wire Wire Line
+	4150 5625 4100 5625
+Wire Wire Line
+	4100 5425 4100 5625
+Wire Wire Line
+	4100 5625 4100 5725
+Wire Wire Line
+	4100 5425 4050 5425
+$Comp
+L C_Small C?
+U 1 1 56B4F39B
+P 4100 5825
+F 0 "C?" H 4192 5863 39  0000 L CNN
+F 1 "10p" H 4192 5787 39  0000 L CNN
+F 2 "" H 4100 5825 50  0000 C CNN
+F 3 "" H 4100 5825 50  0000 C CNN
+	1    4100 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56B4F45D
+P 4800 5825
+F 0 "C?" H 4892 5863 39  0000 L CNN
+F 1 "10p" H 4892 5787 39  0000 L CNN
+F 2 "" H 4800 5825 50  0000 C CNN
+F 3 "" H 4800 5825 50  0000 C CNN
+	1    4800 5825
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 5625
+$Comp
+L GND #PWR?
+U 1 1 56B4F5FE
+P 4450 6025
+F 0 "#PWR?" H 4450 5775 50  0001 C CNN
+F 1 "GND" H 4458 5851 50  0000 C CNN
+F 2 "" H 4450 6025 50  0000 C CNN
+F 3 "" H 4450 6025 50  0000 C CNN
+	1    4450 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L XTAL-SMD-4-PADS X?
+U 1 1 56B4F654
+P 4450 5625
+F 0 "X?" H 4625 5675 47  0000 C CNN
+F 1 "32768Hz" H 4450 5775 47  0000 C CNN
+F 2 "" H 4450 5625 60  0000 C CNN
+F 3 "" H 4450 5625 60  0000 C CNN
+	1    4450 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5325 4800 5625
+Wire Wire Line
+	4800 5625 4800 5725
+Wire Wire Line
+	4800 5625 4750 5625
+Connection ~ 4800 5625
+Wire Wire Line
+	4450 5975 4450 6025
+Wire Wire Line
+	4100 5975 4400 5975
+Wire Wire Line
+	4400 5975 4450 5975
+Wire Wire Line
+	4450 5975 4500 5975
+Wire Wire Line
+	4500 5975 4800 5975
+Wire Wire Line
+	4100 5975 4100 5925
+Wire Wire Line
+	4800 5975 4800 5925
+Connection ~ 4450 5975
+Wire Wire Line
+	4500 5975 4500 5825
+Connection ~ 4500 5975
+Wire Wire Line
+	4400 5825 4400 5975
+Connection ~ 4400 5975
+$Comp
+L C_Small C?
+U 1 1 56B4FEC7
+P 2850 5225
+F 0 "C?" H 2942 5271 50  0000 L CNN
+F 1 "220n" H 2942 5179 50  0000 L CNN
+F 2 "" H 2850 5225 50  0000 C CNN
+F 3 "" H 2850 5225 50  0000 C CNN
+	1    2850 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56B4FF6E
+P 2175 5475
+F 0 "#PWR?" H 2175 5225 50  0001 C CNN
+F 1 "GND" H 2183 5301 50  0000 C CNN
+F 2 "" H 2175 5475 50  0000 C CNN
+F 3 "" H 2175 5475 50  0000 C CNN
+	1    2175 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56B4FFB0
+P 2175 5025
+F 0 "C?" H 2267 5071 50  0000 L CNN
+F 1 "1u" H 2267 4979 50  0000 L CNN
+F 2 "" H 2175 5025 50  0000 C CNN
+F 3 "" H 2175 5025 50  0000 C CNN
+	1    2175 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 56B500CE
+P 2175 4675
+F 0 "#PWR?" H 2175 4525 50  0001 C CNN
+F 1 "+3V3" H 2193 4849 50  0000 C CNN
+F 2 "" H 2175 4675 50  0000 C CNN
+F 3 "" H 2175 4675 50  0000 C CNN
+	1    2175 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 5125 2175 5425
+Wire Wire Line
+	2175 5425 2175 5475
+Wire Wire Line
+	2175 4675 2175 4725
+Wire Wire Line
+	2175 4725 2175 4925
+Wire Wire Line
+	2950 4725 2175 4725
+Connection ~ 2175 4725
+Wire Wire Line
+	2175 5425 2500 5425
+Wire Wire Line
+	2500 5425 2850 5425
+Wire Wire Line
+	2850 5425 2950 5425
+Connection ~ 2175 5425
+Wire Wire Line
+	2850 5325 2850 5425
+Connection ~ 2850 5425
+Wire Wire Line
+	2500 5025 2850 5025
+Wire Wire Line
+	2850 5025 2950 5025
+Wire Wire Line
+	2850 5025 2850 5125
+$Comp
+L Battery BT?
+U 1 1 56B503FF
+P 2500 5225
+F 0 "BT?" H 2618 5263 39  0000 L CNN
+F 1 "3.6V" H 2618 5187 39  0000 L CNN
+F 2 "" V 2500 5265 50  0000 C CNN
+F 3 "" V 2500 5265 50  0000 C CNN
+	1    2500 5225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5375 2500 5425
+Connection ~ 2500 5425
+Wire Wire Line
+	2500 5075 2500 5025
+Connection ~ 2850 5025
+Text Notes 4000 4425 0    47   ~ 0
+RTC\nI2C address: 0x68\nBattery: 1.4 to 3.6V
 $EndSCHEMATC
