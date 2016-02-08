@@ -351,16 +351,6 @@ F 3 "" H 8500 2550 60  0000 C CNN
 	1    8500 2550
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 2800 6550 1050 1000
-U 566E12B6
-F0 "Actuators" 60
-F1 "actuators.sch" 60
-F2 "I2C2_SDA" I R 3850 6850 47 
-F3 "I2C2_SCL" I R 3850 6950 47 
-F4 "PWMGEN_OE" I R 3850 7050 47 
-F5 "POWER" I R 3850 6650 47 
-$EndSheet
 $Comp
 L C_Small C?
 U 1 1 566E19C5
@@ -533,11 +523,11 @@ Text Label 7350 1475 2    47   ~ 0
 I2C2_SDA
 Text Label 7350 1575 2    47   ~ 0
 I2C2_SCL
-Text Label 3850 7050 0    47   ~ 0
+Text Label 3850 6350 0    47   ~ 0
 PWMGEN_OE
-Text Label 3850 6950 0    47   ~ 0
+Text Label 3850 6250 0    47   ~ 0
 I2C2_SCL
-Text Label 3850 6850 0    47   ~ 0
+Text Label 3850 6150 0    47   ~ 0
 I2C2_SDA
 $Sheet
 S 850  4750 1050 2800
@@ -1058,16 +1048,16 @@ $EndComp
 $Comp
 L +5V #PWR?
 U 1 1 56B4D7F8
-P 4000 6650
-F 0 "#PWR?" H 4000 6500 50  0001 C CNN
-F 1 "+5V" H 4000 6790 50  0000 C CNN
-F 2 "" H 4000 6650 60  0000 C CNN
-F 3 "" H 4000 6650 60  0000 C CNN
-	1    4000 6650
+P 4000 5950
+F 0 "#PWR?" H 4000 5800 50  0001 C CNN
+F 1 "+5V" H 4000 6090 50  0000 C CNN
+F 2 "" H 4000 5950 60  0000 C CNN
+F 3 "" H 4000 5950 60  0000 C CNN
+	1    4000 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 6650 3850 6650
+	4000 5950 3850 5950
 Text Label 1900 5450 0    47   ~ 0
 I2C2_SDA
 Text Label 1900 5550 0    47   ~ 0
@@ -1144,4 +1134,64 @@ Text Label 1300 2125 2    47   ~ 0
 D_IN_17
 Text Label 3000 2125 0    47   ~ 0
 D_IN_18
+$Sheet
+S 2800 5850 1050 1700
+U 566E12B6
+F0 "Actuators" 60
+F1 "actuators.sch" 60
+F2 "I2C2_SDA" I R 3850 6150 47 
+F3 "I2C2_SCL" I R 3850 6250 47 
+F4 "PWMGEN_OE" I R 3850 6350 47 
+F5 "POWER" I R 3850 5950 47 
+F6 "OUT_1" I R 3850 6550 47 
+F7 "OUT_2" I R 3850 6650 47 
+F8 "OUT_3" I R 3850 6750 47 
+F9 "OUT_4" I R 3850 6850 47 
+F10 "OUT_5" I R 3850 6950 47 
+F11 "OUT_6" I R 3850 7050 47 
+F12 "OUT_7" I R 3850 7150 47 
+F13 "OUT_8" I R 3850 7250 47 
+F14 "OUT_9" I R 3850 7350 47 
+F15 "OUT_10" I R 3850 7450 47 
+$EndSheet
+Text Label 3850 6550 0    47   ~ 0
+D_OUT_1
+Text Label 3850 6650 0    47   ~ 0
+D_OUT_2
+Text Label 3850 6750 0    47   ~ 0
+D_OUT_3
+Text Label 3850 6850 0    47   ~ 0
+D_OUT_4
+Text Label 3850 6950 0    47   ~ 0
+D_OUT_5
+Text Label 3850 7050 0    47   ~ 0
+D_OUT_6
+Text Label 3850 7150 0    47   ~ 0
+D_OUT_7
+Text Label 3850 7250 0    47   ~ 0
+D_OUT_8
+Text Label 3850 7350 0    47   ~ 0
+D_OUT_9
+Text Label 3850 7450 0    47   ~ 0
+D_OUT_10
+Text Label 1300 2225 2    47   ~ 0
+D_OUT_1
+Text Label 3000 2225 0    47   ~ 0
+D_OUT_2
+Text Label 1300 2325 2    47   ~ 0
+D_OUT_3
+Text Label 3000 2325 0    47   ~ 0
+D_OUT_4
+Text Label 1300 2425 2    47   ~ 0
+D_OUT_5
+Text Label 3000 2425 0    47   ~ 0
+D_OUT_6
+Text Label 1300 2525 2    47   ~ 0
+D_OUT_7
+Text Label 3000 2525 0    47   ~ 0
+D_OUT_8
+Text Label 1300 2625 2    47   ~ 0
+D_OUT_9
+Text Label 3000 2625 0    47   ~ 0
+D_OUT_10
 $EndSCHEMATC
