@@ -66,12 +66,12 @@ $EndDescr
 $Comp
 L BEAGLEBONE U?
 U 1 1 5630E650
-P 1150 7450
-F 0 "U?" H 1200 7400 60  0000 C CNN
-F 1 "BEAGLEBONE" H 1600 7400 60  0000 C CNN
-F 2 "" H 1150 7450 60  0000 C CNN
-F 3 "" H 1150 7450 60  0000 C CNN
-	1    1150 7450
+P 5050 7450
+F 0 "U?" H 5100 7400 60  0000 C CNN
+F 1 "BEAGLEBONE" H 5500 7400 60  0000 C CNN
+F 2 "" H 5050 7450 60  0000 C CNN
+F 3 "" H 5050 7450 60  0000 C CNN
+	1    5050 7450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -184,16 +184,16 @@ F 3 "" H 4150 3375 60  0000 C CNN
 	1    4150 3375
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2200 6950
-NoConn ~ 2200 7050
-NoConn ~ 2200 7150
-NoConn ~ 2200 7250
-NoConn ~ 2200 7350
-NoConn ~ 800  7350
-NoConn ~ 800  7250
-NoConn ~ 800  7150
-NoConn ~ 800  7050
-NoConn ~ 800  6950
+NoConn ~ 6100 6950
+NoConn ~ 6100 7050
+NoConn ~ 6100 7150
+NoConn ~ 6100 7250
+NoConn ~ 6100 7350
+NoConn ~ 4700 7350
+NoConn ~ 4700 7250
+NoConn ~ 4700 7150
+NoConn ~ 4700 7050
+NoConn ~ 4700 6950
 $Comp
 L SN65HVD256 U?
 U 1 1 5630FEC4
@@ -540,30 +540,48 @@ I2C2_SCL
 Text Label 3850 6850 0    47   ~ 0
 I2C2_SDA
 $Sheet
-S 4700 6550 1050 1000
+S 850  4750 1050 2800
 U 569FF03E
 F0 "Sensors" 60
 F1 "sensors.sch" 60
-F2 "ADC_1" I R 5750 6650 47 
-F3 "ADC_2" I R 5750 6750 47 
-F4 "ADC_3" I R 5750 6850 47 
-F5 "ADC_4" I R 5750 6950 47 
-F6 "ADC_5" I R 5750 7050 47 
-F7 "ADC_6" I R 5750 7150 47 
-F8 "I2C_SCL" I R 5750 7350 47 
-F9 "I2C_SDA" I R 5750 7250 47 
+F2 "ADC_1" I R 1900 4850 47 
+F3 "ADC_2" I R 1900 4950 47 
+F4 "ADC_3" I R 1900 5050 47 
+F5 "ADC_4" I R 1900 5150 47 
+F6 "ADC_5" I R 1900 5250 47 
+F7 "ADC_6" I R 1900 5350 47 
+F8 "I2C_SCL" I R 1900 5550 47 
+F9 "I2C_SDA" I R 1900 5450 47 
+F10 "IN_1" I R 1900 5750 47 
+F11 "IN_2" I R 1900 5850 47 
+F12 "IN_3" I R 1900 5950 47 
+F13 "IN_4" I R 1900 6050 47 
+F14 "IN_5" I R 1900 6150 47 
+F15 "IN_6" I R 1900 6250 47 
+F16 "IN_7" I R 1900 6350 47 
+F17 "IN_8" I R 1900 6450 47 
+F18 "IN_9" I R 1900 6550 47 
+F19 "IN_10" I R 1900 6650 47 
+F20 "IN_11" I R 1900 6750 47 
+F21 "IN_12" I R 1900 6850 47 
+F22 "IN_13" I R 1900 6950 47 
+F23 "IN_14" I R 1900 7050 47 
+F24 "IN_15" I R 1900 7150 47 
+F25 "IN_16" I R 1900 7250 47 
+F26 "IN_17" I R 1900 7350 47 
+F27 "IN_18" I R 1900 7450 47 
 $EndSheet
-Text Label 5750 6650 0    47   ~ 0
+Text Label 1900 4850 0    47   ~ 0
 ADC_IN_1
-Text Label 5750 6850 0    47   ~ 0
+Text Label 1900 5050 0    47   ~ 0
 ADC_IN_3
-Text Label 5750 7050 0    47   ~ 0
+Text Label 1900 5250 0    47   ~ 0
 ADC_IN_5
-Text Label 5750 6750 0    47   ~ 0
+Text Label 1900 4950 0    47   ~ 0
 ADC_IN_2
-Text Label 5750 6950 0    47   ~ 0
+Text Label 1900 5150 0    47   ~ 0
 ADC_IN_4
-Text Label 5750 7150 0    47   ~ 0
+Text Label 1900 5350 0    47   ~ 0
 ADC_IN_6
 $Comp
 L SN65HVD256 U?
@@ -750,9 +768,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 925  5950 1125
 Wire Wire Line
-	6000 3225 6000 3325
-Wire Wire Line
-	6000 3325 6000 3375
+	6000 3225 6000 3375
 Wire Wire Line
 	6000 3325 5950 3325
 Wire Wire Line
@@ -761,35 +777,25 @@ Connection ~ 6000 3325
 Wire Wire Line
 	4200 3325 4150 3325
 Wire Wire Line
-	4150 3225 4150 3325
-Wire Wire Line
-	4150 3325 4150 3375
+	4150 3225 4150 3375
 Wire Wire Line
 	4150 3225 4200 3225
 Connection ~ 4150 3325
 Wire Wire Line
-	9900 2600 10050 2600
+	9900 2600 10500 2600
 Wire Wire Line
-	10050 2600 10500 2600
-Wire Wire Line
-	9900 2700 9950 2700
-Wire Wire Line
-	9950 2700 10500 2700
+	9900 2700 10500 2700
 Wire Wire Line
 	10450 2500 10500 2500
 Wire Wire Line
 	10450 3400 10500 3400
 Wire Wire Line
-	10050 3500 10150 3500
-Wire Wire Line
-	10150 3500 10500 3500
+	10050 3500 10500 3500
 Wire Wire Line
 	10050 3500 10050 2600
 Connection ~ 10050 2600
 Wire Wire Line
-	9950 2700 9950 3600
-Wire Wire Line
-	9950 3600 9950 3750
+	9950 2700 9950 3750
 Wire Wire Line
 	9950 3600 10500 3600
 Connection ~ 9950 2700
@@ -832,9 +838,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 1300 9150 1350
 Wire Wire Line
-	9150 1550 9150 1600
-Wire Wire Line
-	9150 1600 9150 1650
+	9150 1550 9150 1650
 Wire Wire Line
 	9150 1600 9400 1600
 Connection ~ 9150 1600
@@ -845,28 +849,20 @@ Wire Wire Line
 Wire Wire Line
 	6400 1325 5950 1325
 Wire Wire Line
-	9900 4700 10050 4700
+	9900 4700 10500 4700
 Wire Wire Line
-	10050 4700 10500 4700
-Wire Wire Line
-	9900 4800 9950 4800
-Wire Wire Line
-	9950 4800 10500 4800
+	9900 4800 10500 4800
 Wire Wire Line
 	10450 4600 10500 4600
 Wire Wire Line
 	10450 5500 10500 5500
 Wire Wire Line
-	10050 5600 10150 5600
-Wire Wire Line
-	10150 5600 10500 5600
+	10050 5600 10500 5600
 Wire Wire Line
 	10050 5600 10050 4700
 Connection ~ 10050 4700
 Wire Wire Line
-	9950 4800 9950 5700
-Wire Wire Line
-	9950 5700 9950 5850
+	9950 4800 9950 5850
 Wire Wire Line
 	9950 5700 10500 5700
 Connection ~ 9950 4800
@@ -893,27 +889,17 @@ Wire Wire Line
 Wire Wire Line
 	6200 6050 6200 6125
 Wire Wire Line
-	5900 6125 6200 6125
-Wire Wire Line
-	6200 6125 6250 6125
-Wire Wire Line
-	6250 6125 6300 6125
-Wire Wire Line
-	6300 6125 6600 6125
+	5900 6125 6600 6125
 Wire Wire Line
 	5900 6125 5900 6100
 Wire Wire Line
-	5900 5625 5900 5850
-Wire Wire Line
-	5900 5850 5900 5900
+	5900 5625 5900 5900
 Wire Wire Line
 	5900 5850 5950 5850
 Wire Wire Line
 	6550 5850 6600 5850
 Wire Wire Line
-	6600 5725 6600 5850
-Wire Wire Line
-	6600 5850 6600 5900
+	6600 5725 6600 5900
 Wire Wire Line
 	6300 6125 6300 6050
 Wire Wire Line
@@ -942,9 +928,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 4900 8500 4900
 Wire Wire Line
-	6225 4475 6225 4525
-Wire Wire Line
-	6225 4525 6225 4625
+	6225 4475 6225 4625
 $Comp
 L R R?
 U 1 1 56AFE83C
@@ -1006,9 +990,7 @@ SPI_CAN_CS
 Text Label 6625 5425 2    47   ~ 0
 SPI_CAN_SCK
 Wire Wire Line
-	9200 3300 9200 3350
-Wire Wire Line
-	9200 3350 9200 3400
+	9200 3300 9200 3400
 Wire Wire Line
 	9200 3350 9275 3350
 Wire Wire Line
@@ -1050,9 +1032,7 @@ F 3 "" H 9375 5450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9200 5400 9200 5450
-Wire Wire Line
-	9200 5450 9200 5500
+	9200 5400 9200 5500
 Wire Wire Line
 	9200 5450 9275 5450
 Wire Wire Line
@@ -1088,8 +1068,80 @@ F 3 "" H 4000 6650 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4000 6650 3850 6650
-Text Label 5750 7250 0    47   ~ 0
+Text Label 1900 5450 0    47   ~ 0
 I2C2_SDA
-Text Label 5750 7350 0    47   ~ 0
+Text Label 1900 5550 0    47   ~ 0
 I2C2_SCL
+Text Label 1900 5750 0    47   ~ 0
+D_IN_1
+Text Label 1900 5850 0    47   ~ 0
+D_IN_2
+Text Label 1900 5950 0    47   ~ 0
+D_IN_3
+Text Label 1900 6050 0    47   ~ 0
+D_IN_4
+Text Label 1900 6150 0    47   ~ 0
+D_IN_5
+Text Label 1900 6250 0    47   ~ 0
+D_IN_6
+Text Label 1900 6350 0    47   ~ 0
+D_IN_7
+Text Label 1900 6450 0    47   ~ 0
+D_IN_8
+Text Label 1900 6550 0    47   ~ 0
+D_IN_9
+Text Label 1900 6650 0    47   ~ 0
+D_IN_10
+Text Label 1900 6750 0    47   ~ 0
+D_IN_11
+Text Label 1900 6850 0    47   ~ 0
+D_IN_12
+Text Label 1900 6950 0    47   ~ 0
+D_IN_13
+Text Label 1900 7050 0    47   ~ 0
+D_IN_14
+Text Label 1900 7150 0    47   ~ 0
+D_IN_15
+Text Label 1900 7250 0    47   ~ 0
+D_IN_16
+Text Label 1900 7350 0    47   ~ 0
+D_IN_17
+Text Label 1900 7450 0    47   ~ 0
+D_IN_18
+Text Label 1300 1325 2    47   ~ 0
+D_IN_1
+Text Label 3000 1325 0    47   ~ 0
+D_IN_2
+Text Label 1300 1425 2    47   ~ 0
+D_IN_3
+Text Label 3000 1425 0    47   ~ 0
+D_IN_4
+Text Label 1300 1525 2    47   ~ 0
+D_IN_5
+Text Label 3000 1525 0    47   ~ 0
+D_IN_6
+Text Label 1300 1625 2    47   ~ 0
+D_IN_7
+Text Label 3000 1625 0    47   ~ 0
+D_IN_8
+Text Label 1300 1725 2    47   ~ 0
+D_IN_9
+Text Label 3000 1725 0    47   ~ 0
+D_IN_10
+Text Label 1300 1825 2    47   ~ 0
+D_IN_11
+Text Label 3000 1825 0    47   ~ 0
+D_IN_12
+Text Label 1300 1925 2    47   ~ 0
+D_IN_13
+Text Label 3000 1925 0    47   ~ 0
+D_IN_14
+Text Label 1300 2025 2    47   ~ 0
+D_IN_15
+Text Label 3000 2025 0    47   ~ 0
+D_IN_16
+Text Label 1300 2125 2    47   ~ 0
+D_IN_17
+Text Label 3000 2125 0    47   ~ 0
+D_IN_18
 $EndSCHEMATC
