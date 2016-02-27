@@ -8,4 +8,5 @@
   (lib (name _sensors)(type KiCad)(uri "$(KIPRJMOD)/kicad-lib/footprints/_sensors.pretty")(options "")(descr ""))
   (lib (name _std)(type KiCad)(uri "$(KIPRJMOD)/kicad-lib/footprints/_std.pretty")(options "")(descr ""))
   (lib (name inductors)(type KiCad)(uri "$(KIPRJMOD)/kicad-lib/footprints/inductors.pretty")(options "")(descr ""))
+  (lib (name _dfn)(type KiCad)(uri "$(KIPRJMOD)/kicad-lib/footprints/_dfn.pretty")(options "")(descr ""))
 )
