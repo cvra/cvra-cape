@@ -1016,7 +1016,7 @@ $EndComp
 Wire Wire Line
 	1550 5400 1450 5400
 Wire Wire Line
-	1450 5400 1450 5500
+	1450 5400 1450 5525
 Wire Wire Line
 	1450 5225 1450 5300
 Wire Wire Line
