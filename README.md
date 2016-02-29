@@ -2,6 +2,9 @@
 
 A Beaglebone black extension board for robots used at [CVRA](http://www.cvra.ch/).
 
+![Board Layout (Front view)](pictures/cvra-cape-front-preview.png)
+![Board Layout (Side view)](pictures/cvra-cape-side-preview.png)
+
 ## Features
 - 2x CAN interfaces with transceivers
     - 1x over native CAN peripheral
