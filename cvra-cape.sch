@@ -55,7 +55,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Goldorak cape"
-Date "2016-02-27"
+Date "2016-03-04"
 Rev "A"
 Comp "Club Vaudois de Robotique Autonome (CVRA)"
 Comment1 "Beaglebone cape for use on Goldorak"
@@ -1039,7 +1039,7 @@ $EndComp
 Wire Wire Line
 	4100 5950 4200 5950
 Wire Wire Line
-	3900 5950 3850 5950
+	3850 5950 3900 5950
 Connection ~ 5125 7250
 Wire Wire Line
 	5425 7250 5125 7250
@@ -1460,6 +1460,33 @@ F 1 "MCP2515_TSSOP" H 7225 5775 60  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm" H 7375 5275 60  0001 C CNN
 F 3 "" H 7375 5275 60  0000 C CNN
 	1    7225 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 56D8CD8C
+P 4650 6075
+F 0 "P1" H 4728 6105 50  0000 L CNN
+F 1 "Power Connector" H 4728 6021 39  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4650 6075 50  0001 C CNN
+F 3 "" H 4650 6075 50  0000 C CNN
+	1    4650 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 5950 3875 6025
+Wire Wire Line
+	3875 6025 4450 6025
+Connection ~ 3875 5950
+$Comp
+L GND #PWR039
+U 1 1 56D8E9D7
+P 4450 6125
+F 0 "#PWR039" H 4450 5875 50  0001 C CNN
+F 1 "GND" H 4458 5951 50  0000 C CNN
+F 2 "" H 4450 6125 50  0000 C CNN
+F 3 "" H 4450 6125 50  0000 C CNN
+	1    4450 6125
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
